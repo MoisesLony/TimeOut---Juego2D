@@ -26,7 +26,7 @@ public class PlayerRespawn : MonoBehaviour
     {
         anim.Play("PlayerHit");
         transition.SetActive(true);      
-        Invoke("ReloadScene", 1);
+        Invoke("ReloadScene", 0);
     }
 
     void ReloadScene()
