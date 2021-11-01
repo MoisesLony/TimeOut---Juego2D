@@ -20,10 +20,29 @@ public class Menu : MonoBehaviour
     public void Juego()
     {
         SceneManager.LoadScene("Level1");
+
     }
 
+    public void Niveles()
+    {
+        SceneManager.LoadScene("Niveles");
+    }
     public void Salir()
     {
         Application.Quit();
+    }
+
+    public void Nivel1()
+
+    {
+        SceneManager.LoadScene("Level1");
+
+    }
+
+    public void Nivel2()
+
+    {
+        SceneManager.LoadScene("Level2");
+
     }
 }
