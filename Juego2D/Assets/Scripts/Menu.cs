@@ -45,4 +45,14 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("Level2");
 
     }
+
+    public void Regresar()
+
+    {
+        SceneManager.LoadScene("Menu");
+
+    }
+
+
 }
+
