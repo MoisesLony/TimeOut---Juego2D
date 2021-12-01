@@ -17,8 +17,7 @@ public class CollectMamager : MonoBehaviour
         {
             Debug.Log("Ve al portal");
             portal.SetActive(true);
-            texto = true;
-            
+            texto = true;            
         }
     }
 }
