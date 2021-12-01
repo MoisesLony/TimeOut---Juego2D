@@ -7477,7 +7477,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0033791661, y: -2.6540043, z: -10}
+  m_LocalPosition: {x: 0.03788382, y: 11.740995, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -30208,7 +30208,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.98451185, y: 1}
+    m_SensorSize: {x: 1.044596, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -30225,7 +30225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300547406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0033791661, y: -2.6540043, z: -10}
+  m_LocalPosition: {x: 0.03788382, y: 11.740995, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 466477920}
@@ -30819,7 +30819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336978262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.562, y: -2.855, z: 0}
+  m_LocalPosition: {x: -0.562, y: 11.54, z: 0}
   m_LocalScale: {x: 0.7435, y: 0.7862, z: 1}
   m_Children:
   - {fileID: 1029871123}
@@ -30908,6 +30908,10 @@ MonoBehaviour:
   anim: {fileID: 1336978263}
   player: {fileID: 1336978262}
   respawn: {fileID: 28716364}
+  colli1: {fileID: 0}
+  colli2: {fileID: 0}
+  lava: {fileID: 0}
+  respawn2: {fileID: 0}
 --- !u!1 &1338124722 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8934311741217021933, guid: c783c8ee94a22074aaf2f0a080c5c9ae, type: 3}

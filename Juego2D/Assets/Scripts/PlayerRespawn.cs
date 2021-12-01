@@ -11,7 +11,11 @@ public class PlayerRespawn : MonoBehaviour
     public Animator anim;
     public GameObject player;
     public Transform respawn;
-    
+    public GameObject colli1;
+    public GameObject colli2;
+    public GameObject lava;
+    public Transform respawn2;
+
     void Start()
     {
         if (PlayerPrefs.GetFloat("cheackPointPX") != 0)
@@ -27,15 +31,17 @@ public class PlayerRespawn : MonoBehaviour
 
     public void PlayerDamage()
     {    
-        anim.Play("PlayerHit");     
-        
+        anim.Play("PlayerHit");            
         player.transform.position = respawn.position;
+        lava.transform.position = respawn2.position;
     }
 
     public void PlayerDamage2()
     {
         anim.Play("PlayerHit");
-        Invoke("ReloadScene", 0);       
+        Invoke("ReloadScene", 0);
+        colli1.SetActive(true);
+        colli2.SetActive(false);
     }
 
     void ReloadScene()

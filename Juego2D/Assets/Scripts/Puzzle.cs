@@ -17,6 +17,8 @@ public class Puzzle : MonoBehaviour
         {
             colli1.SetActive(false);
             colli2.SetActive(true);
+            Destroy(colli1, .0f);
+            Destroy(colli2, .0f);
         }
     }
 }
