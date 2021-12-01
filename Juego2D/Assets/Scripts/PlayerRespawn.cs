@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerRespawn : MonoBehaviour
 {
     private float cheackPointPX, cheackPointPY;
-
+    
     public Animator anim;
-    public GameObject transition;
+    public GameObject player;
+    public Transform respawn;
+    
     void Start()
     {
         if (PlayerPrefs.GetFloat("cheackPointPX") != 0)
@@ -23,14 +26,15 @@ public class PlayerRespawn : MonoBehaviour
     }
 
     public void PlayerDamage()
-    {
-        anim.Play("PlayerHit");
-        transition.SetActive(true);      
-        Invoke("ReloadScene", 0);
+    {    
+        anim.Play("PlayerHit");     
+        
+        player.transform.position = respawn.position;
     }
 
     void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
     }
 }

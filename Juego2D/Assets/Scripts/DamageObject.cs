@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class DamageObject : MonoBehaviour
 {
+    public static bool texto2 = false;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.CompareTag("Player"))
         {
-            Debug.Log("Daño");
-            collision.transform.GetComponent<PlayerRespawn>().PlayerDamage();
+            collision.transform.GetComponent<PlayerRespawn>().PlayerDamage();           
         }
     }
 }
