@@ -11,7 +11,7 @@ public class Portal1 : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Level3");
+            SceneManager.LoadScene("Level2");
             texto4 = true;
             (CollectMamager1.texto2) = false;
         }

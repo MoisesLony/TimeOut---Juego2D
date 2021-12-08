@@ -32,12 +32,6 @@ public class PlayerRespawn : MonoBehaviour
         player.transform.position = respawn.position;
     }
 
-    public void PlayerDamage2()
-    {
-        anim.Play("PlayerHit");
-        Invoke("ReloadScene", 0);       
-    }
-
     void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

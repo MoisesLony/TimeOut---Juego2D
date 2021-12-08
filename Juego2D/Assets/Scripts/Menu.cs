@@ -46,13 +46,6 @@ public class Menu : MonoBehaviour
 
     }
 
-    public void Nivel3()
-
-    {
-        SceneManager.LoadScene("Level3");
-
-    }
-
     public void Regresar()
 
     {
