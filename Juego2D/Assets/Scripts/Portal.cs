@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Portal : MonoBehaviour
 {
+    public Text miText;
     public static bool texto1 = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {

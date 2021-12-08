@@ -17,7 +17,15 @@ public class TextCha : MonoBehaviour
         {
             miText.text = "Escapa por el Portal";
         }
+        if (CollectMamager.texto2 == true)
+        {
+            miText.text = "Escapa por el Portal";
+        }
         if (Portal.texto1 == true)
+        {
+            miText.text = "¡Recolecta los items para avanzar de nivel!";
+        }
+        if (DamageObject.texto2 == true)
         {
             miText.text = "¡Recolecta los items para avanzar de nivel!";
         }
