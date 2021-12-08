@@ -12,7 +12,8 @@ public class Trampoline : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Rigidbody2D>().velocity = (Vector2.up * jumpForce);           
+            collision.gameObject.GetComponent<Rigidbody2D>().velocity = (Vector2.up * jumpForce);
+            Debug.Log("Hola");
             animator.Play("JumpTrampoline");
         }
     }
