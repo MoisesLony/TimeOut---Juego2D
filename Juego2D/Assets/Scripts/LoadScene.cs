@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Portal : MonoBehaviour
+public class LoadScene : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
